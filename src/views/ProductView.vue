@@ -12,7 +12,7 @@ let data = reactive({
 });
 
 function chargeProduct() {
-  // Appel à l'API pour avoir la liste des catégories
+  // Appel à l'API pour avoir la liste des produits
   // Trié par code, descendant
   // Verbe HTTP GET par défaut
   doAjaxRequest(`/api/produits?page=${data.page}&size=${data.size}`)
